@@ -1,6 +1,7 @@
 import React from 'react';
-
+//this component is used to display a bar chart of win rates by ACV  for different stages in a sales process. It takes in an array of stages and the overall win rate as props and renders a bar chart using Tailwind CSS for styling.
 const BarChartACV = ({ stages = [], winRateACVOverall = 0 }) => {
+
   // console.log(" stages:", stages); 
 
   const maxWinRate = Math.max(...stages.map(stage => stage.winRateACV)) || 1; //calculate max win rate 
